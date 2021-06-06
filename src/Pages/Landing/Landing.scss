@@ -1,0 +1,21 @@
+@import "../../assets/styles/mixins";
+
+.landing-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__projects {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 100;
+  }
+
+  &__project {
+    margin: 1rem;
+  }
+}

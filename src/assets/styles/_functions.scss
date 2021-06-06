@@ -1,0 +1,10 @@
+$fonts: (
+  primary: "Saira-Regular",
+  medium: "Saire-Medium",
+  bold: "Saira-Bold",
+  light: "Saira-Light",
+);
+
+@function get-font($font) {
+  @return map-get($fonts, $font);
+}

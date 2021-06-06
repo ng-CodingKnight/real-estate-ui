@@ -1,0 +1,33 @@
+@import "../../../assets/styles/mixins";
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 5px;
+
+  &--dark {
+    background: #184f74;
+    color: #fff;
+  }
+
+  &--light {
+    background: #777c80;
+    color: #000;
+  }
+
+  &__title {
+    @include font(bold);
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #3b754d;
+    margin: 0 2rem;
+  }
+
+  &__content {
+    @include font(light);
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+}

@@ -1,0 +1,5 @@
+@import "functions";
+
+@mixin font($font) {
+  font-family: get-font($font) !important;
+}

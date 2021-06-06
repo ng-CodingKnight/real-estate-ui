@@ -1,0 +1,20 @@
+@import "../../../../assets/styles/mixins";
+
+.toggle-switch {
+  margin-left: 2.5rem;
+  @include font(bold);
+  display: inline-flex;
+  align-items: center;
+
+  &--dark {
+    color: #fff;
+  }
+
+  &--light {
+    color: #333;
+  }
+
+  &__title {
+    margin-right: 1rem;
+  }
+}

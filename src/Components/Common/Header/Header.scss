@@ -1,0 +1,70 @@
+@import "../../../assets/styles/mixins";
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  z-index: 999;
+  color: #a9d0f5;
+  width: 100%;
+
+  &--scroll {
+    background: #0b3861;
+    color: #ece0f8;
+  }
+
+  &__title {
+    @include font(bold);
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-right: 50rem;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      color: orange;
+      transform: translateY(-5px);
+    }
+  }
+
+  &__content {
+    display: inline-flex;
+    cursor: pointer;
+  }
+
+  &__item {
+    @include font(light);
+    margin: 0.5rem 1.5rem;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      color: green;
+      transform: translateY(5px);
+    }
+  }
+
+  input {
+    @include font(primary);
+    margin-left: 0.5rem;
+    border: none;
+    border-bottom: 3px solid #d8d8d8;
+    padding: 0.7rem;
+    background: transparent;
+    text-align: center;
+    color: #ece0f8;
+
+    &::placeholder {
+      @include font(bold);
+      font-size: 1rem;
+      color: #ece0f8;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  & > svg {
+    cursor: pointer;
+  }
+}
